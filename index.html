@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+</head>
+<body>
+   
+<!--
+    <input type="text" id="input" value="bangladesh">
+    <h1 id="h1">some content</h1>
+    <img id="img" src="img/Screenshot%20(95).png" alt="">
+-->
+  
+  
+  
+  <button type="button" id="btn">click me</button>
+  <div id="div"></div>
+   
+    <script>
+//        alert(document.getElementById('input').value="hello");
+//        alert(document.getElementById('h1').innerHTML="welcome");
+//        alert(document.getElementById('img').setAttribute('src', '2.png'));
+          
+        
+        document.getElementById('btn').onclick = function(){
+            var newHeadingElement=document.createElement('h1');
+            var newParagraphElement=document.createElement('p');
+
+            newHeadingElement.innerHTML="This is heading tag";
+            newParagraphElement.innerHTML="This is paragraph tag";
+
+            document.getElementById('div').appendChild(newHeadingElement);
+            document.getElementById('div').appendChild(newParagraphElement);
+        }
+        
+        
+        
+    </script>
+</body>
+</html>
